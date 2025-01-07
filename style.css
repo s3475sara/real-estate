@@ -80,24 +80,10 @@ li{
     display: flex;
     align-items: baseline;
 }
-.email{
-    padding: 35px;
-    background-color: #fefefe;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 40px;
-    border: none;
-}
 .get{
     font-weight: 600;
     font-size: 24px;
     color:#fefefe;
-}
-.p{
-    background-color: #1f1f1f;
-    border-radius: 40px;
-    margin-left:0px;
 }
 .steps{
     text-align: center;
@@ -118,6 +104,7 @@ li{
 .project{
     margin-top: 130px;
     margin-left: 30px;
+    border-left-width: 4px solid green;
 }
 .img{
     display: flex;
@@ -135,9 +122,10 @@ li{
     width: 447px;
 }
 .border{
-    border-top: none;
     padding: 20px;
     border-radius: 14px;
+    background-color: #fefefe;
+
 }
 .star{
     display: flex;
@@ -195,12 +183,13 @@ li p{
     font-weight: 600;
     font-size: 67px;
     color: #000000;
+    margin-bottom: 0px;
 }
 .custom{
     font-weight: 400;
     font-size: 16px;
      color: #000000;
-     margin-top: 0px;
+     margin: 0px;
 }
 .women{
     border-radius: 14px;
@@ -219,6 +208,130 @@ display: flex;
     padding-left: 50px;
 }
 
+.email{
+    background-color: #fefefe;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 40px;
+    border:  none;
+}
+.input{
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Optional: Adjust based on your design */
+  }
+  
+  #textInput {
+    width: 100%;
+    padding-right: 40px; /* Leave space for the clear button */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  #p {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 40px;
+  }
+  
+  #p:hover {
+    background-color: #1f1f1f;
+  }
 
 @media only screen and
- (max-width: 600px)
+ (max-width: 600px){
+    .navBar{
+        flex-direction: column;
+        border-radius: 0px;
+    }
+    .ul{
+        margin-left: 0px;
+        background-color: #fefefe;
+        border-radius: 40px;
+        padding: 0px;
+    }
+    li{
+        margin-left: 10px;
+        display: inline;
+        margin-right: 50px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #1e1e1e;
+    }
+    .icon{
+        margin-left: 0px;
+    }
+    .paragaraph{
+        margin-left: 0px;
+    }
+    .bb{
+        margin-left: 0px;
+    }
+    .section{
+        flex-direction: column;
+        border-radius: 15px;
+        height: 700px;
+        width: 450px;
+        background: linear-gradient(to left,#FBD9B9 0%, #C1DEE8 100%);
+        margin-top: 50px;
+        margin-left: 25px;
+    }
+    .height{
+        height: 500px;
+        width: 450px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .steps{
+        margin-top: 600px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .container{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .containerbox{
+        margin-top: 50px;
+    }
+    .img{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .box{
+        margin-top: 50px;
+    }
+    .weare{
+        font-size: 50px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .men{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .women{
+        margin-top: 50px;
+        height: 500px;
+        width: 450px;
+    }
+    .footer{
+        flex-direction: column;
+            border-radius: 15px;
+            background: linear-gradient(to left,#FBD9B9 0%, #C1DEE8 100%);
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-bottom: 100px;
+            width: 450px;
+        }
+ }
